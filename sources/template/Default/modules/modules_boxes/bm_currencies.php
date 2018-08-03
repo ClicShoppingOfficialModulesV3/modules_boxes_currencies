@@ -11,8 +11,6 @@
   use ClicShopping\OM\Registry;
   use ClicShopping\OM\CLICSHOPPING;
 
-  use ClicShopping\Apps\Marketing\BannerManager\Classes\Shop\Banner;
-
   class bm_currencies {
     public $code;
     public $group;
