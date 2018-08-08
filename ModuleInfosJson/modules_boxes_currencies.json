@@ -1,7 +1,7 @@
 {
   "title":			"modules_boxes_currencies",
   "type":       "boxe",
-  "vendor":			"ClicShopping",
+  "vendor":			"modules_boxes",
   "is_free":   "Yes",
   "website_link_to_sell" : "",
   "version":			1.0,
