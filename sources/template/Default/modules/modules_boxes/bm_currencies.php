@@ -1,11 +1,13 @@
 <?php
 /**
- * bm_currencies.php
- * @copyright Copyright 2008 - http://www.innov-concept.com
- * @Brand : ClicShopping(Tm) at Inpi all right Reserved
- * @license GPL 2 License & MIT Licence
- 
-*/
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *
+ *
+ */
 
   use ClicShopping\OM\HTML;
   use ClicShopping\OM\Registry;
@@ -95,10 +97,10 @@
       $CLICSHOPPING_Db = Registry::get('Db');
 
       $CLICSHOPPING_Db->save('configuration', [
-          'configuration_title' => 'Souhaitez-vous activer ce module ?',
+          'configuration_title' => 'Do you want activate this module ?',
           'configuration_key' => 'MODULE_BOXES_CURRENCIES_STATUS',
           'configuration_value' => 'True',
-          'configuration_description' => 'Souhaitez vous activer ce module à votre boutique ?',
+          'configuration_description' => 'Do you want activate this module in your shop ?',
           'configuration_group_id' => '6',
           'sort_order' => '1',
           'set_function' => 'clic_cfg_set_boolean_value(array(\'True\', \'False\'))',
@@ -107,10 +109,10 @@
       );
 
       $CLICSHOPPING_Db->save('configuration', [
-          'configuration_title' => 'Veuillez choisir l\'emplacement du contenu de la boxe',
+          'configuration_title' => 'Please choose where the boxe must be displayed',
           'configuration_key' => 'MODULE_BOXES_CURRENCIES_CONTENT_PLACEMENT',
           'configuration_value' => 'Right Column',
-          'configuration_description' => 'Parmi les options qui vous sont proposées , veuillez en choisir une. <strong>Note :</strong><br /><br /><i>- Column right : Colonne de droite<br />- Column left : Colonne de gauche</i>',
+          'configuration_description' => 'Choose where the boxe must be displayed',
           'configuration_group_id' => '6',
           'sort_order' => '2',
           'set_function' => 'clic_cfg_set_boolean_value(array(\'Left Column\', \'Right Column\'),',
@@ -119,10 +121,10 @@
       );
 
       $CLICSHOPPING_Db->save('configuration', [
-          'configuration_title' => 'Veuillez indiquer le groupe d\'appartenance de la banniere',
+          'configuration_title' => 'Please indicate the banner group for the image',
           'configuration_key' => 'MODULE_BOXES_CURRENCIES_BANNER_GROUP',
           'configuration_value' => SITE_THEMA.'_boxe_currencies',
-          'configuration_description' => 'Veuillez indiquer le groupe d\'appartenance de la bannière<br /><br /><strong>Note :</strong><br /><i>Le groupe sera à indiquer lors de la création de la bannière dans la section Marketing / Gestion des bannières</i>',
+          'configuration_description' => 'Indicate the banner group<br /><br /><strong>Note :</strong><br /><i>The group must be created or selected whtn you create a banner in Marketing / banner</i>',
           'configuration_group_id' => '6',
           'sort_order' => '3',
           'set_function' => '',
@@ -131,10 +133,10 @@
       );
 
       $CLICSHOPPING_Db->save('configuration', [
-          'configuration_title' => 'Ordre de tri d\'affichage',
+          'configuration_title' => 'Sort order',
           'configuration_key' => 'MODULE_BOXES_CURRENCIES_SORT_ORDER',
           'configuration_value' => '120',
-          'configuration_description' => 'Ordre de tri pour l\'affichage (Le plus petit nombre est montré en premier)',
+          'configuration_description' => 'Sort order of display. Lowest is displayed first',
           'configuration_group_id' => '6',
           'sort_order' => '4',
           'set_function' => '',
@@ -143,10 +145,10 @@
       );
 
       $CLICSHOPPING_Db->save('configuration', [
-          'configuration_title' => 'Veuillez indiquer ou la boxe doit s\'afficher',
+          'configuration_title' => 'Indicate the page where the module is displayed',
           'configuration_key' => 'MODULE_BOXES_CURRENCIES_DISPLAY_PAGES',
           'configuration_value' => 'all',
-          'configuration_description' => 'Sélectionnez les pages où la boxe doit être présente.',
+          'configuration_description' => 'Select the page where the module is displayed.',
           'configuration_group_id' => '6',
           'sort_order' => '5',
           'set_function' => 'clic_cfg_set_select_pages_list',
