@@ -13,10 +13,10 @@
   use ClicShopping\OM\CLICSHOPPING;
 
   class bm_currencies {
-    public $code;
+    public string $code;
     public $group;
-    public string $title;
-    public string $description;
+    public $title;
+    public $description;
     public ?int $sort_order = 0;
     public bool $enabled = false;
     public $pages;
